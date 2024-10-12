@@ -1,9 +1,23 @@
-/********** Template CSS **********/
+
 :root {
-    --primary: #00B074;
+    
 	--secondary: #2B9BFF;
+    --primary: #00B074;
     --light: #EFFDF5;
     --dark: #2B3940;
+}
+
+.brand-text h5 {
+    font-size: 14px;
+    font-weight: normal;
+    
+    
+}
+
+.company-logo {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
 }
 
 .back-to-top {
@@ -15,7 +29,7 @@
 }
 
 
-/*** Spinner ***/
+
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -68,8 +82,6 @@
     border-radius: 2px;
 }
 
-
-/*** Navbar ***/
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
