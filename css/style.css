@@ -1,15 +1,16 @@
 
 :root {
     
-	--secondary: #2B9BFF;
-    --primary: #00B074;
+	--primary: #2B9BFF;
+    --secondary: #00B074;
     --light: #EFFDF5;
     --dark: #2B3940;
 }
 
-.brand-text h5 {
+.brand-text {
     font-size: 14px;
     font-weight: normal;
+    color:#1bd46e;
     
     
 }
@@ -163,56 +164,29 @@
 
 
 /*** Header ***/
-.header-carousel .container,
-.page-header .container {
-    position: relative;
-    padding: 45px 0 45px 35px;
-    border-left: 15px solid var(--primary);
+.header-carousel .owl-carousel-item {
+    height: 500px; /* Adjust this value as needed */
+    overflow: hidden; /* Hide overflow content */
 }
 
-.header-carousel .container::before,
-.header-carousel .container::after,
-.page-header .container::before,
-.page-header .container::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 15px;
-    background: var(--primary);
+.header-carousel .owl-carousel-item img {
+    height: 100%; /* Make the image fill the height of the container */
+    width: 100%; /* Ensure the image takes full width */
+    object-fit: cover; /* Cover the entire area without distortion */
+    display: block; /* Remove any gaps below the image */
 }
 
-.header-carousel .container::after,
-.page-header .container::after {
-    top: 100%;
-    margin-top: -15px;
-}
-
+/* Adjustments for smaller screens */
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
-        position: relative;
-        min-height: 500px;
+        height: 200px; /* Adjust this value for smaller screens */
     }
     
     .header-carousel .owl-carousel-item img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .header-carousel .owl-carousel-item p {
-        font-size: 14px !important;
-        font-weight: 400 !important;
-    }
-
-    .header-carousel .owl-carousel-item h1 {
-        font-size: 30px;
-        font-weight: 600;
+        height: 100%; /* Maintain fill */
+        object-fit: cover; /* Cover the area */
     }
 }
-
 .header-carousel .owl-nav {
     position: absolute;
     top: 50%;
@@ -252,7 +226,6 @@
 .breadcrumb-item + .breadcrumb-item::before {
     color: var(--light);
 }
-
 
 /*** About ***/
 .about-bg {
