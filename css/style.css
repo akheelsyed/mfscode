@@ -8,6 +8,11 @@
 }
 
 
+/* Change the border color of input fields on focus */
+input:focus, textarea:focus {
+    border-color: blue !important;
+    box-shadow: 0 0 5px blue; /* Optional: adds a glow effect */
+}
 
 
 .back-to-top {
@@ -126,7 +131,14 @@
         border-top: 1px solid #EEEEEE;
     }
 
-    
+    .brand-text {
+        font-size: 12px; /* Decrease font size for brand text */
+        text-align: center; /* Center text */
+    }
+
+    .company-logo {
+        width: 80px; /* Adjust logo size */
+    }
 }
 
 .navbar-light .navbar-brand,
