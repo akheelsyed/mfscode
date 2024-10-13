@@ -100,6 +100,16 @@ input:focus, textarea:focus {
         align-items: center;
     }
 
+    .navbar-toggler {
+        order: 1; /* Ensure the toggle button appears first */
+        margin-top: 10px; /* Add margin to prevent overlap */
+    }
+
+    .navbar-collapse {
+        order: 2; /* Ensure the nav items appear after the toggle button */
+        margin-top: 20px; /* Add margin to push items below the company name */
+    }
+
     .navbar-nav {
         display: flex;
         flex-direction: column;
@@ -117,16 +127,6 @@ input:focus, textarea:focus {
 
     .company-logo {
         width: 80px; /* Adjust logo size */
-    }
-
-    /* Ensure the toggle button is positioned correctly */
-    .navbar-toggler {
-        margin-top: 10px; /* Add margin to prevent overlap */
-    }
-
-    /* Adjust the navbar items to prevent overlap */
-    .navbar-collapse {
-        margin-top: 20px; /* Add margin to push items below the company name */
     }
 }
 
