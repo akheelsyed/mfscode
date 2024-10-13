@@ -85,6 +85,9 @@ input:focus, textarea:focus {
     font-weight: normal;
     border-radius: 2px;
 }
+.company-logo {
+    width: 50px; /* Adjust logo size */
+}
 
 /* General styles for the navbar */
 .navbar {
@@ -126,7 +129,7 @@ input:focus, textarea:focus {
     }
 
     .company-logo {
-        width: 80px; /* Adjust logo size */
+        width: 40px; /* Adjust logo size */
     }
 }
 
