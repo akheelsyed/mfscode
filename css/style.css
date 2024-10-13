@@ -118,6 +118,16 @@ input:focus, textarea:focus {
     .company-logo {
         width: 80px; /* Adjust logo size */
     }
+
+    /* Ensure the toggle button is positioned correctly */
+    .navbar-toggler {
+        margin-top: 10px; /* Add margin to prevent overlap */
+    }
+
+    /* Adjust the navbar items to prevent overlap */
+    .navbar-collapse {
+        margin-top: 20px; /* Add margin to push items below the company name */
+    }
 }
 
 /* Additional adjustments for better responsiveness */
