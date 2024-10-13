@@ -89,15 +89,11 @@ input:focus, textarea:focus {
 /* General styles for the navbar */
 .navbar {
     width: 100%;
-    overflow: hidden;
+    overflow: hidden; /* Prevent overflow */
 }
 
 /* Styles for mobile devices */
 @media (max-width: 768px) {
-    .navbar {
-        background-color: white;
-    }
-
     .navbar-brand {
         display: flex;
         flex-direction: column;
@@ -105,13 +101,13 @@ input:focus, textarea:focus {
     }
 
     .navbar-toggler {
-        order: 2;
-        margin-top: 10px;
+        order: 1; /* Ensure the toggle button appears first */
+        margin-top: 10px; /* Add margin to prevent overlap */
     }
 
     .navbar-collapse {
-        order: 3;
-        margin-top: 20px;
+        order: 2; /* Ensure the nav items appear after the toggle button */
+        margin-top: 20px; /* Add margin to push items below the company name */
     }
 
     .navbar-nav {
@@ -121,18 +117,16 @@ input:focus, textarea:focus {
     }
 
     .navbar-nav .nav-link {
-        padding: 12px 20px; /* Adjust padding for better touch targets */
+        padding: 10px 0; /* Adjust padding for better spacing */
     }
 
     .brand-text {
-        order: 1;
-        font-size: 12px;
-        text-align: center;
+        font-size: 12px; /* Decrease font size for brand text */
+        text-align: center; /* Center text */
     }
 
     .company-logo {
-        max-width: 100%;
-        height: auto;
+        width: 80px; /* Adjust logo size */
     }
 }
 
@@ -142,7 +136,7 @@ input:focus, textarea:focus {
     .navbar-light .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
-        font-size: 12px;
+        font-size: 12px; /* Decrease font size for mobile */
     }
 
     .navbar-light .navbar-nav {
@@ -160,8 +154,8 @@ input:focus, textarea:focus {
     }
 
     .navbar-light.sticky-top {
-        top: 0;
-        transition: top 0.5s; /* Smooth transition */
+        top: -100px;
+        transition: .5s;
     }
 }
 
@@ -175,8 +169,6 @@ input:focus, textarea:focus {
         opacity: 0;
         visibility: hidden;
         transition: .5s;
-        background-color: white; /* Set background for dropdown */
-        padding: 10px; /* Add padding */
     }
 
     .navbar .nav-item:hover .dropdown-menu {
@@ -185,13 +177,6 @@ input:focus, textarea:focus {
         transition: .5s;
     }
 }
-
-/* Hover effects for nav links */
-.nav-item .nav-link:hover {
-    color: darkblue;
-    text-decoration: underline; /* Optional */
-}
-
 
 
 /*** Header ***/
