@@ -11,6 +11,43 @@
     margin-top: 5px; /* Adjust the value as needed */
 }
 
+.vacancies-container {
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    height: 100%; /* Set a fixed height for the container */
+    margin: auto;
+    overflow: hidden; /* Hide the overflow */
+}
+
+.vacancies-list {
+    display: flex; /* Align vacancies in a row */
+    animation: scroll 10s linear infinite; /* Animation for scrolling */
+}
+
+.vacancy {
+    min-width: 100%; /* Set to 100% to show one image at a time */
+    height: 400px; /* Match the height of the container */
+    margin-right: 0; /* No margin to avoid space */
+    flex-shrink: 0; /* Prevent shrinking */
+    display: flex; /* Center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.vacancy img {
+    width: auto; /* Allow image to maintain its aspect ratio */
+    height: 100%; /* Make images fill the container height */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* End off-screen to the left */
+    }
+}
+
 
 .whatsapp-link img {
     width: 50px; /* Adjust the size as needed */
